@@ -15,23 +15,32 @@ export default function Home() {
       <header className="border-b border-zinc-900 sticky top-0 bg-[#02020F] z-20">
         <div className="container max-w-screen-xl flex items-center justify-between h-[8vh]">
           <a className="hover:opacity-60">
-            <Image alt="NSDEV" src="/logo.png" width={40} height={40} loading="lazy" />
+            <Image alt="NSDEV" src="/logo.svg" width={40} height={40} loading="lazy" />
           </a>
 
           <div>menu</div>
         </div>
       </header>
+      <div className="py-56 px-56 h-96 w-96 rounded-full left-0 -ml-56 opacity-10 blur-3xl bg-white absolute bg-gradient-to-l to-[#2824d5] from-[#FF0088]"></div>
+      <div className="py-56 px-56 h-96 w-96 rounded-full opacity-10 -mt-56 -mr-36 blur-3xl bg-white absolute right-0 bg-gradient-to-l to-[#2824d5] from-[#FF0088]"></div>
+      {/* <span className="flex h-96 w-96 absolute opacity-10">
+        <span className="animate-bounce absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+        <span className="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
+      </span> */}
       <main>
         <div className="relative pt-20 md:pt-36 background-animate text-center">
           <div className="relative z-10">
             <div className="px-6">
-              <a className="border border-border/30 rounded-full inline-flex items-center justify-center text-[14px] relative mb-6 hover:bg-secondary/10">
-                <div className="absolute right-3 top-0 z-10 h-px w-[80px]" style={{
-                  background: "linear-gradient(90deg, rgba(56, 189, 248, 0) 0%, rgba(56, 189, 248, 0) 0%, rgba(232, 232, 232, 0.2) 33.02%, rgba(143, 143, 143, 0.67) 64.41%, rgba(236, 72, 153, 0) 98.93%)"
-                }} />
-                <span className="inline-flex items-center gap-1 whitespace-nowrap px-6 py-3">Introducing Notifylog V2. Read the release.</span>
-              </a>
-              <div className="mx-auto md:max-w-[55rem] font-book font-styling font-display font-effect-hero font-gradient font-bold text-center text-4xl md:text-6xl md:leading-[4.2rem]">
+              <div className="relative inline-flex overflow-hidden rounded-full p-px">
+                <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#c2c2c2_0%,#505050_50%,#bebebe_100%)]" />
+                <span className="inline-flex h-full w-full items-center justify-center rounded-full bg-[#02020F] px-6 py-3 text-sm text-gray-50 backdrop-blur-3xl">
+                  Estratégia, design e tecnologia 🚀
+                </span>
+              </div>
+              {/* <a className="border border-border/30 rounded-full inline-flex items-center justify-center text-[14px] relative mb-6 hover:bg-secondary/10">              
+                <span className="inline-flex items-center gap-1 whitespace-nowrap px-6 py-3">Estratégia, design e tecnologia 🚀</span>
+              </a> */}
+              <div className="mx-auto py-6 md:max-w-[55rem] font-book font-styling font-display font-effect-hero font-gradient font-bold text-center text-4xl md:text-6xl md:leading-[4.2rem]">
                 <h1>Empower Your Business with Realtime Event Tracking</h1>
               </div>
               <p className="mt-4 max-w-[30rem] mx-auto md:max-w-xl text-zinc-500 dark:text-primary/80 md:leading-normal text-xl">
@@ -94,7 +103,8 @@ export default function Home() {
           </div>
         </section>
         <Line />
-        <section className="opacity-1 transform perspective-1200 py-20">
+        <section className="opacity-1 transform perspective-1200 py-20 overflow-hidden">
+        <div className="animate-bounce py-56 px-56 h-96 w-96 rounded-full opacity-10 blur-3xl bg-white absolute -top-80 left-1/2 transform -translate-x-1/2 bg-gradient-to-l to-[#2824d5] from-[#FF0088]"></div>
           <div className="container max-w-screen-xl grid md:grid-cols-2 gap-12 items-start">
             <div>
               <h3 className="text-white text-3xl font-bold max-w-[80%] font-gradient mb-4 mt-2">
@@ -213,7 +223,7 @@ export default function Home() {
         </section>
         <section className="container max-w-screen-xl flex flex-col items-center justify-center text-center py-20">
           <a className="hover:opacity-60">
-            <Image alt="NSDEV" src="/logo.png" width={32} height={32} loading="lazy" />
+            <Image alt="NSDEV" src="/logo.svg" width={32} height={32} loading="lazy" />
           </a>
           <p className="text-md font-bold md:max-w-[30%] mt-4 mb-2">
             Desenvolver é so uma parte do processo.
