@@ -1,113 +1,233 @@
 import Image from "next/image";
+import LPDefault from "./lp";
+import LP3 from "./lp3";
+import LP5 from "./lp5";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { LucideActivity, LucideBadgePoundSterling, LucideUser } from "lucide-react";
+import Logo1Tech from "@/components/svg/logo1";
+import { FaqItem } from "./_compoenents/faq-item";
+import { Line } from "./_compoenents/line";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
+    <div className="bg-[#02020F] min-h-screen text-white">
+      <header className="border-b border-zinc-900 sticky top-0 bg-[#02020F] z-20">
+        <div className="container max-w-screen-xl flex items-center justify-between h-[8vh]">
+          <a className="hover:opacity-60">
+            <Image alt="NSDEV" src="/logo.png" width={40} height={40} loading="lazy" />
           </a>
+
+          <div>menu</div>
         </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
+      </header>
+      <main>
+        <div className="relative pt-20 md:pt-36 background-animate text-center">
+          <div className="relative z-10">
+            <div className="px-6">
+              <a className="border border-border/30 rounded-full inline-flex items-center justify-center text-[14px] relative mb-6 hover:bg-secondary/10">
+                <div className="absolute right-3 top-0 z-10 h-px w-[80px]" style={{
+                  background: "linear-gradient(90deg, rgba(56, 189, 248, 0) 0%, rgba(56, 189, 248, 0) 0%, rgba(232, 232, 232, 0.2) 33.02%, rgba(143, 143, 143, 0.67) 64.41%, rgba(236, 72, 153, 0) 98.93%)"
+                }} />
+                <span className="inline-flex items-center gap-1 whitespace-nowrap px-6 py-3">Introducing Notifylog V2. Read the release.</span>
+              </a>
+              <div className="mx-auto md:max-w-[55rem] font-book font-styling font-display font-effect-hero font-gradient font-bold text-center text-4xl md:text-6xl md:leading-[4.2rem]">
+                <h1>Empower Your Business with Realtime Event Tracking</h1>
+              </div>
+              <p className="mt-4 max-w-[30rem] mx-auto md:max-w-xl text-zinc-500 dark:text-primary/80 md:leading-normal text-xl">
+                Gain insights and oversee your product's performance with NotifyLog's streamlined event tracking. Make smarter decisions backed by valuable data.
+              </p>
+              <div className="px-12 mt-8 flex justify-center items-center flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-10">
+                <Link href="/">
+                  <Button className="bg-transparent relative text-xl h-12 w-40 p-[1px] overflow-hidden rounded-full">
+                    <div className="relative rounded-full bg-black/30 border border-border backdrop-blur-xl text-white flex items-center justify-center w-full h-full text-sm font-semibold hover:brightness-150 transition ease-in-out">Start</div>
+                  </Button>
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className="invisible md:visible mt-8 md:mt-20 w-full h-px bg-zinc-900" />
+          <div className="z-0 absolute top-0 left-1/2 transform -translate-x-1/2 mx-auto w-full max-w-[76rem] h-full">
+            <div className="hidden md:block absolute top-[13rem] h-px w-full bg-zinc-900" />
+            <div className="hidden md:block absolute top-[17.1rem] h-px w-full bg-zinc-900" />
+            <div className="absolute left-0 h-full w-px bg-zinc-900" />
+            <div className="absolute right-0 h-full w-px bg-zinc-900" />
+          </div>
+          <div className="z-0 absolute top-0 left-1/2 transform -translate-x-1/2 mx-auto w-full max-w-6xl h-full">
+            <div className="absolute left-0 h-full w-px bg-zinc-900" />
+            <div className="absolute right-0 h-full w-px bg-zinc-900" />
+          </div>
+        </div>
+        <section className="relative py-10">
+          <div className="container">
+            <header style={{ marginBottom: '3rem' }}>
+              <Link href={`/`} className="border border-border rounded-full inline-flex items-center justify-center text-[14px] relative mb-6">
+                <div className="absolute right-3 top-0 z-10 h-px w-[80px]">
+                </div>
+                <span className="inline-flex items-center gap-1 whitespace-nowrap px-6 py-3">
+                  Features
+                </span>
+              </Link>
+              <h3 style={{ color: 'white', fontSize: '1.875rem', fontWeight: 'bold', maxWidth: '30%', marginBottom: '1rem' }}>
+                First-class developer experience
+              </h3>
+              <p style={{ opacity: '0.8', fontSize: '1.125rem', maxWidth: '70%' }}>
+                NotifyLog streamlines team routines with centralized event management, insights, and data-driven decision making.
+              </p>
+            </header>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div style={{ gap: '0.5rem' }}>
+                <Image width={1280} height={720} alt="Image 1" src={``} className="bg-zinc-800" />
+                {/* icon */}
+                <LucideBadgePoundSterling />
+                <h4 style={{ marginBottom: '0.5rem', fontWeight: 'bold' }}>Centralize events in one place</h4>
+                <p style={{ opacity: '0.8', marginBottom: '1rem' }}>NotifyLog serves as a centralized hub for event tracking, allowing you to consolidate notifications from multiple sources. This centralization streamlines monitoring and decision-making, offering seamless integration with your existing workflows.</p>
+              </div>
+              <div style={{ gap: '0.5rem' }}>
+                <Image width={1280} height={720} alt="Image 1" src={``} className="bg-zinc-800" />
+                {/* icon */}
+                <LucideActivity />
+                <h4 style={{ marginBottom: '0.5rem', fontWeight: 'bold' }}>Centralize events in one place</h4>
+                <p style={{ opacity: '0.8', marginBottom: '1rem' }}>NotifyLog serves as a centralized hub for event tracking, allowing you to consolidate notifications from multiple sources. This centralization streamlines monitoring and decision-making, offering seamless integration with your existing workflows.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <Line />
+        <section className="opacity-1 transform perspective-1200 py-20">
+          <div className="container max-w-screen-xl grid md:grid-cols-2 gap-12 items-start">
+            <div>
+              <h3 className="text-white text-3xl font-bold max-w-[80%] font-gradient mb-4 mt-2">
+                Curious Minds Want to Know: Your Queries Answered
+              </h3>
+            </div>
+            <div>
+              <div className="w-full space-y-4">
+                <FaqItem
+                  id="1"
+                  question="Quais serviços a NSDEV oferece?"
+                  answer="A NSDEV desenvolve soluções tecnológicas personalizadas, incluindo suporte completo no desenvolvimento de projetos."
+                />
+                <FaqItem
+                  id="2"
+                  question="Como a NSDEV garante a qualidade dos projetos?"
+                  answer="Garantimos a entrega de projetos de alta qualidade e inovação através de uma equipe especializada e processos bem definidos."
+                />
+                <FaqItem
+                  id="3"
+                  question="A NSDEV oferece suporte pós-entrega?"
+                  answer="Sim, oferecemos suporte completo em todas as etapas, incluindo pós-entrega, para garantir a satisfação total do cliente."
+                />
+                <FaqItem
+                  id="4"
+                  question="Quais as vantagens de escolher a NSDEV?"
+                  answer="Oferecemos soluções personalizadas, equipe qualificada, suporte completo e compromisso com a inovação e qualidade."
+                />
+                <FaqItem
+                  id="5"
+                  question="Como iniciar um projeto com a NSDEV?"
+                  answer="Entre em contato conosco para discutir suas necessidades e como podemos ajudar a transformar suas ideias em realidade."
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <Line />
+        <section className="py-20">
+          <div className="container max-w-screen-xl mx-auto px-4">
+            <h3 className="text-white text-3xl font-bold mb-8">O que nossos clientes dizem</h3>
+            <div className="grid md:grid-cols-3 gap-8">
+              {[
+                {
+                  id: 1,
+                  name: "João Silva",
+                  role: "CEO da InovaTech",
+                  testimonial: "A NSDEV transformou completamente a maneira como gerenciamos nossos projetos. Sua equipe é incrivelmente atenciosa e profissional.",
+                },
+                {
+                  id: 2,
+                  name: "Maria Oliveira",
+                  role: "Gerente de Projetos da TechSolutions",
+                  testimonial: "Desde que começamos a trabalhar com a NSDEV, vimos uma melhoria significativa em nossa eficiência operacional. Eles realmente entendem o que é necessário para fazer um projeto ter sucesso.",
+                },
+                {
+                  id: 3,
+                  name: "Carlos Andrade",
+                  role: "Diretor de Inovação da CreativMind",
+                  testimonial: "A abordagem personalizada da NSDEV para o desenvolvimento de software é inigualável. Eles realmente se dedicam a entender as necessidades do cliente.",
+                },
+              ].map(({ id, name, role, testimonial }) => (
+                <div key={id} className="bg-zinc-900 p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
+                  <p className="text-white text-opacity-80 text-sm mb-4">{testimonial}</p>
+                  <div className="flex items-center">
+                    <div className="flex-shrink-0 mr-3">
+                      <div className="w-10 h-10 rounded-full bg-zinc-800 flex items-center justify-center">
+                        <LucideUser className="text-white" size={24} />
+                      </div>
+                    </div>
+                    <div>
+                      <p className="text-white font-bold">{name}</p>
+                      <p className="text-zinc-400 text-sm">{role}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+        <section className="py-20">
+          <div className="container max-w-screen-xl mx-auto px-4">
+            <h3 className="text-white text-3xl font-bold mb-8">O que fazemos</h3>
+            <p className="text-white text-opacity-80 mb-6">Juntamos várias técnicas para ajudar o seu projeto a ter o sucesso que merece</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="bg-zinc-900 p-6 rounded-lg shadow-lg">
+                <h4 className="text-white font-bold mb-2">I.D.</h4>
+                <p className="text-zinc-400 text-sm">Design Inteligente é onde prototipamos todo o seu projeto focando em resolver problemas reais dos usuários.</p>
+              </div>
+              <div className="bg-zinc-900 p-6 rounded-lg shadow-lg">
+                <h4 className="text-white font-bold mb-2">LGPD</h4>
+                <p className="text-zinc-400 text-sm">Desenvolvemos o seu sistema dentro da Compliance da LGPD, construímos os fluxos de acordo com a Lei Geral de Proteção de dados</p>
+              </div>
+              <div className="bg-zinc-900 p-6 rounded-lg shadow-lg">
+                <h4 className="text-white font-bold mb-2">LANÇAMENTO</h4>
+                <p className="text-zinc-400 text-sm">Projetamos uma estrutura de lançamento que escale junto com sua estratégia de marketing.</p>
+              </div>
+              <div className="bg-zinc-900 p-6 rounded-lg shadow-lg">
+                <h4 className="text-white font-bold mb-2">CTO</h4>
+                <p className="text-zinc-400 text-sm">Fazemos o papel de CTO temporário do seu projeto deixando você focado no que realmente importa.</p>
+              </div>
+              <div className="bg-zinc-900 p-6 rounded-lg shadow-lg">
+                <h4 className="text-white font-bold mb-2">A/B</h4>
+                <p className="text-zinc-400 text-sm">Através de técnicas de ux research, conseguimos entender quais recursos realmente o seu sistema precisa.</p>
+              </div>
+              <div className="bg-zinc-900 p-6 rounded-lg shadow-lg">
+                <h4 className="text-white font-bold mb-2">UX/UI</h4>
+                <p className="text-zinc-400 text-sm">Além de desenvolver, o nosso forte é construir projetos que sejam intuitivos e incrivelmente bonitos.</p>
+              </div>
+              <div className="bg-zinc-900 p-6 rounded-lg shadow-lg">
+                <h4 className="text-white font-bold mb-2">SEGURANÇA</h4>
+                <p className="text-zinc-400 text-sm">Levamos a segurança dos dados do seu app/sistema muito a sério. Usamos a mesma estrutura de servidores das Big techs.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="container max-w-screen-xl flex flex-col items-center justify-center text-center py-20">
+          <a className="hover:opacity-60">
+            <Image alt="NSDEV" src="/logo.png" width={32} height={32} loading="lazy" />
+          </a>
+          <p className="text-md font-bold md:max-w-[30%] mt-4 mb-2">
+            Desenvolver é so uma parte do processo.
           </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+          <span className="text-xs text-zinc-400">Estratégia, design e tecnologia.</span>
+        </section>
+      </main>
+      <Line />
+      <footer className="py-10 text-sm">
+        <div className="container max-w-screen-xl flex flex-col md:flex-row text-center md:text-left justify-between opacity-60">
+          <p className="mb-8 md:mb-0">© {new Date().getFullYear()} NSDEV Creative. All rights reserved.</p>
+          <p className="mb-8 md:mb-0">CNPJ: 52.834.193/0001-80</p>
+        </div>
+      </footer>
+    </div>
   );
 }
