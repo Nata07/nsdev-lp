@@ -1,13 +1,10 @@
-import Image from "next/image";
-import LPDefault from "./lp";
-import LP3 from "./lp3";
-import LP5 from "./lp5";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { LucideActivity, LucideBadgePoundSterling, LucideUser } from "lucide-react";
-import Logo1Tech from "@/components/svg/logo1";
-import { FaqItem } from "./_compoenents/faq-item";
-import { Line } from "./_compoenents/line";
+import { LucideActivity, LucideBadgePoundSterling, LucideCake, LucideNetwork, LucideUser } from "lucide-react";
+import { FaqItem } from "./_components/faq-item";
+import { Line } from "./_components/line";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -21,8 +18,8 @@ export default function Home() {
           <div>menu</div>
         </div>
       </header>
-      <div className="py-56 px-56 h-96 w-96 rounded-full left-0 -ml-56 opacity-10 blur-3xl bg-white absolute bg-gradient-to-l to-[#2824d5] from-[#FF0088]"></div>
-      <div className="py-56 px-56 h-96 w-96 rounded-full opacity-10 -mt-56 -mr-36 blur-3xl bg-white absolute right-0 bg-gradient-to-l to-[#2824d5] from-[#FF0088]"></div>
+      {/* <div className="py-56 px-56 h-96 w-96 max-w-full overflow-hidden rounded-full left-0 -ml-56 opacity-10 blur-3xl bg-white absolute bg-gradient-to-l to-[#2824d5] from-[#FF0088]"></div>
+      <div className="py-56 px-56 h-96 w-96 overflow-hidden rounded-full opacity-10 -mt-56 -mr-36 blur-3xl bg-white absolute right-0 bg-gradient-to-l to-[#2824d5] from-[#FF0088]"></div> */}
       {/* <span className="flex h-96 w-96 absolute opacity-10">
         <span className="animate-bounce absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
         <span className="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
@@ -32,7 +29,7 @@ export default function Home() {
           <div className="relative z-10">
             <div className="px-6">
               <div className="relative inline-flex overflow-hidden rounded-full p-px">
-                <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#c2c2c2_0%,#505050_50%,#bebebe_100%)]" />
+                <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#2824d5_0%,#2824d563,#bebebe_100%)]" />
                 <span className="inline-flex h-full w-full items-center justify-center rounded-full bg-[#02020F] px-6 py-3 text-sm text-gray-50 backdrop-blur-3xl">
                   Estratégia, design e tecnologia 🚀
                 </span>
@@ -44,7 +41,7 @@ export default function Home() {
                 <h1>Empower Your Business with Realtime Event Tracking</h1>
               </div>
               <p className="mt-4 max-w-[30rem] mx-auto md:max-w-xl text-zinc-500 dark:text-primary/80 md:leading-normal text-xl">
-                Gain insights and oversee your product's performance with NotifyLog's streamlined event tracking. Make smarter decisions backed by valuable data.
+                Gain insights and oversee your product s performance with NotifyLog s streamlined event tracking. Make smarter decisions backed by valuable data.
               </p>
               <div className="px-12 mt-8 flex justify-center items-center flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-10">
                 <Link href="/">
@@ -68,7 +65,7 @@ export default function Home() {
           </div>
         </div>
         <section className="relative py-10">
-          <div className="container">
+          <div className="container max-w-screen-xl">
             <header style={{ marginBottom: '3rem' }}>
               <Link href={`/`} className="border border-border rounded-full inline-flex items-center justify-center text-[14px] relative mb-6">
                 <div className="absolute right-3 top-0 z-10 h-px w-[80px]">
@@ -84,27 +81,31 @@ export default function Home() {
                 NotifyLog streamlines team routines with centralized event management, insights, and data-driven decision making.
               </p>
             </header>
-            <div className="grid md:grid-cols-2 gap-8">
-              <div style={{ gap: '0.5rem' }}>
-                <Image width={1280} height={720} alt="Image 1" src={``} className="bg-zinc-800" />
-                {/* icon */}
-                <LucideBadgePoundSterling />
-                <h4 style={{ marginBottom: '0.5rem', fontWeight: 'bold' }}>Centralize events in one place</h4>
-                <p style={{ opacity: '0.8', marginBottom: '1rem' }}>NotifyLog serves as a centralized hub for event tracking, allowing you to consolidate notifications from multiple sources. This centralization streamlines monitoring and decision-making, offering seamless integration with your existing workflows.</p>
+            <main className="grid md:grid-cols-2 gap-8">
+              <div className="">
+                <Image alt="Imagem 1" src="/hero-01.webp" width={1280} height={720} className="mb-6" />
+                <div className="rounded-md border max-w-9 border-indigo-900 bg-gradient-to-t to-[#2824d563] from-[#000] p-1.5 text-blue-700 dark:from-black dark:to-blue-400">
+                  <LucideActivity className="w-5 h-5" color="#FF0088" />
+                </div>
+                <h4 className="mb-2 mt-4 font-bold">Centralize events in one place</h4>
+                <p className="opacity-80 mb-4">NotifyLog serves as a centralized hub for event tracking, allowing you to consolidate notifications from multiple sources. This centralization streamlines monitoring and decision-making, offering seamless integration with your existing workflows.</p>
               </div>
-              <div style={{ gap: '0.5rem' }}>
-                <Image width={1280} height={720} alt="Image 1" src={``} className="bg-zinc-800" />
-                {/* icon */}
-                <LucideActivity />
-                <h4 style={{ marginBottom: '0.5rem', fontWeight: 'bold' }}>Centralize events in one place</h4>
-                <p style={{ opacity: '0.8', marginBottom: '1rem' }}>NotifyLog serves as a centralized hub for event tracking, allowing you to consolidate notifications from multiple sources. This centralization streamlines monitoring and decision-making, offering seamless integration with your existing workflows.</p>
+              <div className="">
+                <Image alt="Imagem 1" src="/hero-01.webp" width={1280} height={720} className="mb-6" />
+                <div className="flex items-center justify-center rounded-md border max-w-9 border-indigo-900 bg-gradient-to-t to-[#2824d563] from-[#000] p-1.5 text-blue-700 dark:from-black dark:to-blue-400">
+                  <LucideNetwork className="w-5 h-5" color="#FF0088" />
+                </div>
+                <h4 className="mb-2 mt-4 font-bold">Centralize events in one place</h4>
+                <p className="opacity-80 mb-4">NotifyLog serves as a centralized hub for event tracking, allowing you to consolidate notifications from multiple sources. This centralization streamlines monitoring and decision-making, offering seamless integration with your existing workflows.</p>
               </div>
-            </div>
+            </main>
+              
           </div>
         </section>
         <Line />
         <section className="opacity-1 transform perspective-1200 py-20 overflow-hidden">
-        <div className="animate-bounce py-56 px-56 h-96 w-96 rounded-full opacity-10 blur-3xl bg-white absolute -top-80 left-1/2 transform -translate-x-1/2 bg-gradient-to-l to-[#2824d5] from-[#FF0088]"></div>
+          <div className="animate-bounce py-56 px-56 h-96 w-96 rounded-full opacity-10 blur-3xl bg-white absolute -top-80 left-1/2 transform -translate-x-1/2 bg-gradient-to-l to-[#2824d5] from-[#FF0088]">
+          </div>
           <div className="container max-w-screen-xl grid md:grid-cols-2 gap-12 items-start">
             <div>
               <h3 className="text-white text-3xl font-bold max-w-[80%] font-gradient mb-4 mt-2">
@@ -142,6 +143,93 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <Line />
+        <div className="py-20">
+          <div className="container max-w-screen-xl grid grid-cols-[20rem_1fr] gap-12 items-start">
+            <div>
+              <h2 className="font-bold leading-normal text-5xl">Nossa Metodologia</h2>
+            </div>
+            <div className="grid grid-cols-2">
+              <div className="flex items-center justify-center w-full pl-5">
+                <div className="border border-zinc-800 w-full">
+                  <div className="w-full bg-[#0a0a0a/20]">
+                    <div className="h-28 relative flex flex-col">
+                      {/* <div className="border-b border-2 border-border h-px w-full"></div>
+                      <div className="border-b border-2 border-border h-px w-full"></div> */}
+                      <div className="absolute w-full px-10 h-full flex items-center justify-between">
+                        <div className="border-l border-dashed border-zinc-800 h-full"></div>
+                        <div className="border-l border-dashed border-zinc-800 h-full"></div>
+                        <div className="border-l border-dashed border-zinc-800 h-full"></div>
+                        <div className="border-l border-dashed border-zinc-800 h-full"></div>
+                      </div>
+                      <div className="flex flex-col h-full border-b border-zinc-800 py-8 justify-between items-center">
+                        {/* <Line />
+                        <Line /> */}
+                        <div className="border-b border-dashed border-zinc-800 w-full"></div>
+                        <div className="border-b border-dashed border-zinc-800 w-full"></div>
+                      </div>
+                      <div className="absolute flex w-full h-full items-center justify-center">
+                        <div className="h-16 w-16 rounded-full border-dashed border border-zinc-800 text-center flex justify-center items-center">
+                          <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-t to-[#2824d563] from-[#000] py-2 px-2 text-blue-700 dark:from-black dark:to-blue-400">
+                              <h2 className="font-bold text-xl">N</h2>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="absolute w-10 h-8 -right-0.5 bg-[#02020F]">
+                        <div className="" style={{
+                          color: 'hsla(0, 0%, 100%, .4)',
+                          width: '32px',
+                          height: '32px',
+                          position: 'absolute',
+                          top: '-1px',
+                          right: '0',
+                          zIndex: 2,
+                          borderBottom: '32px solid hsla(0, 0%, 100%, .4)',
+                          borderRight: '32px solid #02020F',
+                        }}>
+                          <div style={{
+                            // position: 'absolute',
+                            // background: '#27272a',
+                            // top: 0,
+                            // height: 'calc(32px)',
+                            // width: '1px',
+                            // right: '-1px',
+                            // transformOrigin: 'bottom',
+                            // transform: 'rotate(-45deg) scaleY(1.4)',
+                            // zIndex: 99,
+                          }} />
+                        </div>
+                      </div>
+                      {/* <div>
+                        N
+                      </div> */}
+                    </div>
+                  </div>
+                  <div className="w-full px-4 py-2">
+                    <h4 className="font-bold text-xl">Negócios</h4>
+                  </div>
+                </div>
+              </div>
+              <div>b</div>
+              <div>b</div>
+              <div>b</div>
+              <div>b</div>
+              <div>b</div>
+              <div>b</div>
+              <div>b</div>
+              <div>b</div>
+              <div>b</div>
+              <div>b</div>
+              <div>b</div>
+              <div>b</div>
+              <div>b</div>
+              <div>b</div>
+              <div>b</div>
+            </div>
+            
+          </div>
+        </div>
         <Line />
         <section className="py-20">
           <div className="container max-w-screen-xl mx-auto px-4">
