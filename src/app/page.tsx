@@ -1,10 +1,11 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { LucideActivity, LucideBadgePoundSterling, LucideCake, LucideNetwork, LucideUser } from "lucide-react";
+import { LucideActivity, LucideArrowBigRightDash, LucideArrowUpRight, LucideBadgePoundSterling, LucideCake, LucideNetwork, LucideUser } from "lucide-react";
 import { FaqItem } from "./_components/faq-item";
 import { Line } from "./_components/line";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import Image from "next/image";
+import WhatsAppButton from "./_components/button-wp";
 
 export default function Home() {
   return (
@@ -83,7 +84,7 @@ export default function Home() {
             </header>
             <main className="grid md:grid-cols-2 gap-8">
               <div className="">
-                <Image alt="Imagem 1" src="/hero-01.webp" width={1280} height={720} className="mb-6" />
+                <Image alt="Imagem 1" src="/hr.webp" width={1280} height={720} className="mb-6" />
                 <div className="rounded-md border max-w-9 border-indigo-900 bg-gradient-to-t to-[#2824d563] from-[#000] p-1.5 text-blue-700 dark:from-black dark:to-blue-400">
                   <LucideActivity className="w-5 h-5" color="#FF0088" />
                 </div>
@@ -145,89 +146,322 @@ export default function Home() {
         </section>
         <Line />
         <div className="py-20">
-          <div className="container max-w-screen-xl grid grid-cols-[20rem_1fr] gap-12 items-start">
-            <div>
-              <h2 className="font-bold leading-normal text-5xl">Nossa Metodologia</h2>
+          <div className="container max-w-screen-xl grid md:grid-cols-[20rem_1fr] gap-12 items-start">
+            <div className="">
+              <h2 className="font-bold leading-normal text-start text-5xl">Nossa Metodologia</h2>
             </div>
-            <div className="grid grid-cols-2">
-              <div className="flex items-center justify-center w-full pl-5">
-                <div className="border border-zinc-800 w-full">
-                  <div className="w-full bg-[#0a0a0a/20]">
-                    <div className="h-28 relative flex flex-col">
-                      {/* <div className="border-b border-2 border-border h-px w-full"></div>
-                      <div className="border-b border-2 border-border h-px w-full"></div> */}
-                      <div className="absolute w-full px-10 h-full flex items-center justify-between">
-                        <div className="border-l border-dashed border-zinc-800 h-full"></div>
-                        <div className="border-l border-dashed border-zinc-800 h-full"></div>
-                        <div className="border-l border-dashed border-zinc-800 h-full"></div>
-                        <div className="border-l border-dashed border-zinc-800 h-full"></div>
-                      </div>
-                      <div className="flex flex-col h-full border-b border-zinc-800 py-8 justify-between items-center">
-                        {/* <Line />
-                        <Line /> */}
-                        <div className="border-b border-dashed border-zinc-800 w-full"></div>
-                        <div className="border-b border-dashed border-zinc-800 w-full"></div>
-                      </div>
-                      <div className="absolute flex w-full h-full items-center justify-center">
-                        <div className="h-16 w-16 rounded-full border-dashed border border-zinc-800 text-center flex justify-center items-center">
-                          <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-t to-[#2824d563] from-[#000] py-2 px-2 text-blue-700 dark:from-black dark:to-blue-400">
-                              <h2 className="font-bold text-xl">N</h2>
+            <div className="grid lg:grid-cols-2 space-y-4">
+              <div className="esquerda md:pl-9">
+                <div className="flex items-center justify-center w-full md:pl-5 mb-8">
+                  <div className="border border-zinc-800 w-full">
+                    <div className="w-full bg-[#0a0a0a/20]">
+                      <div className="h-28 relative flex flex-col bg-[#2824d515]">
+                        {/* <div className="border-b border-2 border-border h-px w-full"></div>
+                        <div className="border-b border-2 border-border h-px w-full"></div> */}
+                        <div className="absolute w-full px-10 h-full flex items-center justify-between">
+                          <div className="border-l border-dashed border-zinc-800 h-full"></div>
+                          <div className="border-l border-dashed border-zinc-800 h-full"></div>
+                          <div className="border-l border-dashed border-zinc-800 h-full"></div>
+                          <div className="border-l border-dashed border-zinc-800 h-full"></div>
+                        </div>
+                        <div className="flex flex-col h-full border-b border-zinc-800 py-8 justify-between items-center">
+                          {/* <Line />
+                          <Line /> */}
+                          <div className="border-b border-dashed border-zinc-800 w-full"></div>
+                          <div className="border-b border-dashed border-zinc-800 w-full"></div>
+                        </div>
+                        <div className="absolute flex w-full h-full items-center justify-center">
+                          <div className="h-16 w-16 rounded-full border-dashed border border-zinc-800 text-center flex justify-center items-center">
+                            <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-t to-[#2824d5] from-[#000] py-2 px-2 text-blue-700 dark:from-black dark:to-blue-400">
+                                <h2 className="font-bold text-xl text-[#FF0088]">N</h2>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="absolute w-10 h-8 -right-0.5 bg-[#02020F]">
+                          <div className="" style={{
+                            color: 'hsla(0, 0%, 100%, .4)',
+                            width: '32px',
+                            height: '32px',
+                            position: 'absolute',
+                            top: '-1px',
+                            right: '0',
+                            zIndex: 2,
+                            borderBottom: '32px solid hsla(0, 0%, 100%, .4)',
+                            borderRight: '32px solid #02020F',
+                          }}>
                           </div>
                         </div>
                       </div>
-
-                      <div className="absolute w-10 h-8 -right-0.5 bg-[#02020F]">
-                        <div className="" style={{
-                          color: 'hsla(0, 0%, 100%, .4)',
-                          width: '32px',
-                          height: '32px',
-                          position: 'absolute',
-                          top: '-1px',
-                          right: '0',
-                          zIndex: 2,
-                          borderBottom: '32px solid hsla(0, 0%, 100%, .4)',
-                          borderRight: '32px solid #02020F',
-                        }}>
-                          <div style={{
-                            // position: 'absolute',
-                            // background: '#27272a',
-                            // top: 0,
-                            // height: 'calc(32px)',
-                            // width: '1px',
-                            // right: '-1px',
-                            // transformOrigin: 'bottom',
-                            // transform: 'rotate(-45deg) scaleY(1.4)',
-                            // zIndex: 99,
-                          }} />
-                        </div>
-                      </div>
-                      {/* <div>
-                        N
-                      </div> */}
+                    </div>
+                    <div className="w-full px-2 py-2">
+                      <h4 className="font-bold text-xl">Negócios</h4>
+                      <p className="text-slate-400 text-sm mt-2">
+                        Antes de iniciar qualquer desenvolvimento, compreendemos o negócio do cliente e identificamos os objetivos, desafios e resultados esperados.
+                      </p>
                     </div>
                   </div>
-                  <div className="w-full px-4 py-2">
-                    <h4 className="font-bold text-xl">Negócios</h4>
+                </div>
+                <div className="flex items-center justify-center w-full md:pl-5 mb-8">
+                  <div className="border border-zinc-800 w-full">
+                    <div className="w-full bg-[#0a0a0a/20]">
+                      <div className="h-28 relative flex flex-col bg-[#FF008815]">
+                        {/* <div className="border-b border-2 border-border h-px w-full"></div>
+                        <div className="border-b border-2 border-border h-px w-full"></div> */}
+                        <div className="absolute w-full px-10 h-full flex items-center justify-between">
+                          <div className="border-l border-dashed border-zinc-800 h-full"></div>
+                          <div className="border-l border-dashed border-zinc-800 h-full"></div>
+                          <div className="border-l border-dashed border-zinc-800 h-full"></div>
+                          <div className="border-l border-dashed border-zinc-800 h-full"></div>
+                        </div>
+                        <div className="flex flex-col h-full border-b border-zinc-800 py-8 justify-between items-center">
+                          {/* <Line />
+                          <Line /> */}
+                          <div className="border-b border-dashed border-zinc-800 w-full"></div>
+                          <div className="border-b border-dashed border-zinc-800 w-full"></div>
+                        </div>
+                        <div className="absolute flex w-full h-full items-center justify-center">
+                          <div className="h-16 w-16 rounded-full border-dashed border border-zinc-800 text-center flex justify-center items-center">
+                            <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-t to-[#2824d5] from-[#02020F] py-2 px-2 text-blue-700 dark:from-black dark:to-blue-400">
+                                <h2 className="font-bold text-xl text-[#FF0088]">D</h2>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="absolute w-10 h-8 -right-0.5 bg-[#02020F]">
+                          <div className="" style={{
+                            color: 'hsla(0, 0%, 100%, .4)',
+                            width: '32px',
+                            height: '32px',
+                            position: 'absolute',
+                            top: '-1px',
+                            right: '0',
+                            zIndex: 2,
+                            borderBottom: '32px solid hsla(0, 0%, 100%, .4)',
+                            borderRight: '32px solid #02020F',
+                          }}>
+                            <div style={{
+                              // position: 'absolute',
+                              // background: '#27272a',
+                              // top: 0,
+                              // height: 'calc(32px)',
+                              // width: '1px',
+                              // right: '-1px',
+                              // transformOrigin: 'bottom',
+                              // transform: 'rotate(-45deg) scaleY(1.4)',
+                              // zIndex: 99,
+                            }} />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="w-full px-4 py-2">
+                      <h4 className="font-bold text-xl">Design</h4>
+                      <p className="text-slate-400 text-sm mt-2">O design é uma parte essencial do processo de desenvolvimento. 
+                        Nos comprometemos a criar interfaces intuitivas e atraentes, garantindo uma experiência do usuário excepcional 
+                        em todos os pontos de contato com o produto desenvolvido.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex items-center justify-center w-full md:pl-5 mb-8">
+                  <div className="border border-zinc-800 w-full">
+                    <div className="w-full bg-[#0a0a0a/20]">
+                      <div className="h-28 relative flex flex-col bg-[#2824d515] ">
+                        {/* <div className="border-b border-2 border-border h-px w-full"></div>
+                        <div className="border-b border-2 border-border h-px w-full"></div> */}
+                        <div className="absolute w-full px-10 h-full flex items-center justify-between">
+                          <div className="border-l border-dashed border-zinc-800 h-full"></div>
+                          <div className="border-l border-dashed border-zinc-800 h-full"></div>
+                          <div className="border-l border-dashed border-zinc-800 h-full"></div>
+                          <div className="border-l border-dashed border-zinc-800 h-full"></div>
+                        </div>
+                        <div className="flex flex-col h-full border-b border-zinc-800 py-8 justify-between items-center">
+                          {/* <Line />
+                          <Line /> */}
+                          <div className="border-b border-dashed border-zinc-800 w-full"></div>
+                          <div className="border-b border-dashed border-zinc-800 w-full"></div>
+                        </div>
+                        <div className="absolute flex w-full h-full items-center justify-center">
+                          <div className="h-16 w-16 rounded-full border-dashed border border-zinc-800 text-center flex justify-center items-center">
+                            <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-t to-[#2824d5] from-[#02020F] py-2 px-2 text-blue-700 dark:from-black dark:to-blue-400">
+                                <h2 className="font-bold text-xl text-[#FF0088]">V</h2>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="absolute w-10 h-8 -right-0.5 bg-[#02020F]">
+                          <div className="" style={{
+                            color: 'hsla(0, 0%, 100%, .4)',
+                            width: '32px',
+                            height: '32px',
+                            position: 'absolute',
+                            top: '-1px',
+                            right: '0',
+                            zIndex: 2,
+                            borderBottom: '32px solid hsla(0, 0%, 100%, .4)',
+                            borderRight: '32px solid #02020F',
+                          }}>
+                            <div style={{
+                              // position: 'absolute',
+                              // background: '#27272a',
+                              // top: 0,
+                              // height: 'calc(32px)',
+                              // width: '1px',
+                              // right: '-1px',
+                              // transformOrigin: 'bottom',
+                              // transform: 'rotate(-45deg) scaleY(1.4)',
+                              // zIndex: 99,
+                            }} />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="w-full px-4 py-2">
+                      <h4 className="font-bold text-xl">Visão</h4>
+                      <p className="text-slate-400 text-sm mt-2"> Nossa visão vai além do desenvolvimento de soluções técnicas. 
+                        Priorizamos uma parceria sólida com nossos clientes, visando não apenas o sucesso imediato, mas também a longevidade e o crescimento contínuo. 
+                        Trabalhando em conjunto, buscamos alcançar resultados, moldando um futuro de sucesso para o seu negócio.</p>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div>b</div>
-              <div>b</div>
-              <div>b</div>
-              <div>b</div>
-              <div>b</div>
-              <div>b</div>
-              <div>b</div>
-              <div>b</div>
-              <div>b</div>
-              <div>b</div>
-              <div>b</div>
-              <div>b</div>
-              <div>b</div>
-              <div>b</div>
-              <div>b</div>
+              <div className="flex flex-col items-start justify-between gap-4">
+                <div>
+                  <div className="flex items-center justify-center w-full md:pl-5 mb-8">
+                    <div className="border border-zinc-800 w-full">
+                      <div className="w-full bg-[#0a0a0a/20]">
+                        <div className="h-28 relative flex flex-col bg-[#FF008815]">
+                          {/* <div className="border-b border-2 border-border h-px w-full"></div>
+                          <div className="border-b border-2 border-border h-px w-full"></div> */}
+                          <div className="absolute w-full px-10 h-full flex items-center justify-between">
+                            <div className="border-l border-dashed border-zinc-800 h-full"></div>
+                            <div className="border-l border-dashed border-zinc-800 h-full"></div>
+                            <div className="border-l border-dashed border-zinc-800 h-full"></div>
+                            <div className="border-l border-dashed border-zinc-800 h-full"></div>
+                          </div>
+                          <div className="flex flex-col h-full border-b border-zinc-800 py-8 justify-between items-center">
+                            {/* <Line />
+                            <Line /> */}
+                            <div className="border-b border-dashed border-zinc-800 w-full"></div>
+                            <div className="border-b border-dashed border-zinc-800 w-full"></div>
+                          </div>
+                          <div className="absolute flex w-full h-full items-center justify-center">
+                            <div className="h-16 w-16 rounded-full border-dashed border border-zinc-800 text-center flex justify-center items-center">
+                              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-t to-[#2824d5] from-[#02020F] py-2 px-2 text-blue-700 dark:from-black dark:to-blue-400">
+                                  <h2 className="font-bold text-xl text-[#FF0088]">S</h2>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="absolute w-10 h-8 -right-0.5 bg-[#02020F]">
+                            <div className="" style={{
+                              color: 'hsla(0, 0%, 100%, .4)',
+                              width: '32px',
+                              height: '32px',
+                              position: 'absolute',
+                              top: '-1px',
+                              right: '0',
+                              zIndex: 2,
+                              borderBottom: '32px solid hsla(0, 0%, 100%, .4)',
+                              borderRight: '32px solid #02020F',
+                            }}>
+                              <div style={{
+                                // position: 'absolute',
+                                // background: '#27272a',
+                                // top: 0,
+                                // height: 'calc(32px)',
+                                // width: '1px',
+                                // right: '-1px',
+                                // transformOrigin: 'bottom',
+                                // transform: 'rotate(-45deg) scaleY(1.4)',
+                                // zIndex: 99,
+                              }} />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="w-full px-4 py-2">
+                        <h4 className="font-bold text-xl">Soluções</h4>
+                        <p className="text-slate-400 text-sm mt-2">
+                          Com base na compreensão detalhada do negócio do cliente, projetamos e desenvolvemos soluções sob medida para atender às suas necessidades exclusivas e 
+                          tudo adaptado para alcançar os objetivos específicos do cliente.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex items-center justify-center w-full md:pl-5 mb-8">
+                    <div className="border border-zinc-800 w-full">
+                      <div className="w-full bg-[#0a0a0a/20]">
+                        <div className="h-28 relative flex flex-col bg-[#2824d515]">
+                          {/* <div className="border-b border-2 border-border h-px w-full"></div>
+                          <div className="border-b border-2 border-border h-px w-full"></div> */}
+                          <div className="absolute w-full px-10 h-full flex items-center justify-between">
+                            <div className="border-l border-dashed border-zinc-800 h-full"></div>
+                            <div className="border-l border-dashed border-zinc-800 h-full"></div>
+                            <div className="border-l border-dashed border-zinc-800 h-full"></div>
+                            <div className="border-l border-dashed border-zinc-800 h-full"></div>
+                          </div>
+                          <div className="flex flex-col h-full border-b border-zinc-800 py-8 justify-between items-center">
+                            {/* <Line />
+                            <Line /> */}
+                            <div className="border-b border-dashed border-zinc-800 w-full"></div>
+                            <div className="border-b border-dashed border-zinc-800 w-full"></div>
+                          </div>
+                          <div className="absolute flex w-full h-full items-center justify-center">
+                            <div className="h-16 w-16 rounded-full border-dashed border border-zinc-800 text-center flex justify-center items-center">
+                              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-t to-[#2824d5] from-[#02020F] py-2 px-2 text-blue-700 dark:from-black dark:to-blue-400">
+                                  <h2 className="font-bold text-xl text-[#FF0088]">E</h2>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="absolute w-10 h-8 -right-0.5 bg-[#02020F]">
+                            <div className="" style={{
+                              color: 'hsla(0, 0%, 100%, .4)',
+                              width: '32px',
+                              height: '32px',
+                              position: 'absolute',
+                              top: '-1px',
+                              right: '0',
+                              zIndex: 2,
+                              borderBottom: '32px solid hsla(0, 0%, 100%, .4)',
+                              borderRight: '32px solid #02020F',
+                            }}>
+                              <div style={{
+                                // position: 'absolute',
+                                // background: '#27272a',
+                                // top: 0,
+                                // height: 'calc(32px)',
+                                // width: '1px',
+                                // right: '-1px',
+                                // transformOrigin: 'bottom',
+                                // transform: 'rotate(-45deg) scaleY(1.4)',
+                                // zIndex: 99,
+                              }} />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="w-full px-4 py-2">
+                        <h4 className="font-bold text-xl">Entrega</h4>
+                        <p className="text-slate-400 text-sm mt-2">A NSDEV adota uma abordagem ágil para o desenvolvimento, priorizando entregas incrementais e feedback contínuo do cliente. 
+                          Isso permite ajustes ao longo do processo e garante que o produto final atenda plenamente às expectativas e necessidades do cliente.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex flex-col items-end justify-end space-y-6 w-full h-full md:pl-5 mb-8">
+                  <div className="border-l border-t border-zinc-800 w-full flex flex-col py-4 items-end justify-end space-y-6 mt-auto h-full">
+                    <h4 className="font-bold text-xl ">Bora fazer seu negócio decolar? 🚀</h4>
+                    <Button className="h-14 bg-gradient-to-b to-[#2824d563] from-[#2824d532] hover:opacity-80 font-bold">
+                      Quero decolar
+                      <LucideArrowUpRight color="#FF0088" />
+                    </Button>
+                  </div>
+                </div>
+              </div>
             </div>
-            
           </div>
         </div>
         <Line />
@@ -326,6 +560,7 @@ export default function Home() {
           <p className="mb-8 md:mb-0">CNPJ: 52.834.193/0001-80</p>
         </div>
       </footer>
+      <WhatsAppButton />
     </div>
   );
 }
