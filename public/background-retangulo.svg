@@ -1,0 +1,61 @@
+<svg width="1440" height="329" viewBox="0 0 1440 329" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1577_161)">
+<mask id="mask0_1577_161" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1440" height="329">
+<path opacity="0.3" d="M1440 0.273438H0V328.273H1440V0.273438Z" fill="url(#paint0_linear_1577_161)"/>
+</mask>
+<g mask="url(#mask0_1577_161)">
+<path d="M5.16699 -3.72656L5.16702 703.273" stroke="white" stroke-opacity="0.2"/>
+<path d="M54.5 -3.72656V703.273" stroke="white" stroke-opacity="0.2"/>
+<path d="M103.833 -3.72656V703.273" stroke="white" stroke-opacity="0.2"/>
+<path d="M153.167 -3.72656V703.273" stroke="white" stroke-opacity="0.2"/>
+<path d="M202.5 -3.72656V703.273" stroke="white" stroke-opacity="0.2"/>
+<path d="M251.833 -3.72656L251.834 703.273" stroke="white" stroke-opacity="0.2"/>
+<path d="M301.167 -3.72656V703.273" stroke="white" stroke-opacity="0.2"/>
+<path d="M350.5 -3.72656V703.273" stroke="white" stroke-opacity="0.2"/>
+<path d="M399.833 -3.72656L399.834 703.273" stroke="white" stroke-opacity="0.2"/>
+<path d="M449.167 -3.72656V703.273" stroke="white" stroke-opacity="0.2"/>
+<path d="M498.5 -3.72656V703.273" stroke="white" stroke-opacity="0.2"/>
+<path d="M547.833 -3.72656L547.834 703.273" stroke="white" stroke-opacity="0.2"/>
+<path d="M597.167 -3.72656V703.273" stroke="white" stroke-opacity="0.2"/>
+<path d="M646.5 -3.72656V703.273" stroke="white" stroke-opacity="0.2"/>
+<path d="M695.833 -3.72656V703.273" stroke="white" stroke-opacity="0.2"/>
+<path d="M745.167 -3.72656V703.273" stroke="white" stroke-opacity="0.2"/>
+<path d="M794.5 -3.72656V703.273" stroke="white" stroke-opacity="0.2"/>
+<path d="M843.833 -3.72656V703.273" stroke="white" stroke-opacity="0.2"/>
+<path d="M893.167 -3.72656V703.273" stroke="white" stroke-opacity="0.2"/>
+<path d="M942.5 -3.72656V703.273" stroke="white" stroke-opacity="0.2"/>
+<path d="M991.833 -3.72656V703.273" stroke="white" stroke-opacity="0.2"/>
+<path d="M1041.17 -3.72656V703.273" stroke="white" stroke-opacity="0.2"/>
+<path d="M1090.5 -3.72656V703.273" stroke="white" stroke-opacity="0.2"/>
+<path d="M1139.83 -3.72656V703.273" stroke="white" stroke-opacity="0.2"/>
+<path d="M1189.17 -3.72656V703.273" stroke="white" stroke-opacity="0.2"/>
+<path d="M1238.5 -3.72656V703.273" stroke="white" stroke-opacity="0.2"/>
+<path d="M1287.83 -3.72656V703.273" stroke="white" stroke-opacity="0.2"/>
+<path d="M1337.17 -3.72656V703.273" stroke="white" stroke-opacity="0.2"/>
+<path d="M1386.5 -3.72656V703.273" stroke="white" stroke-opacity="0.2"/>
+<path d="M1435.83 -3.72656V703.273" stroke="white" stroke-opacity="0.2"/>
+<mask id="mask1_1577_161" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="-4" width="1440" height="708">
+<path d="M1440 -3.72656H0V703.273H1440V-3.72656Z" fill="white"/>
+</mask>
+<g mask="url(#mask1_1577_161)">
+<path d="M0 37.2734H1440" stroke="white" stroke-opacity="0.2"/>
+<path d="M0 78.2734H1440" stroke="white" stroke-opacity="0.2"/>
+<path d="M0 119.273H1440" stroke="white" stroke-opacity="0.2"/>
+<path d="M0 160.273H1440" stroke="white" stroke-opacity="0.2"/>
+<path d="M0 201.273H1440" stroke="white" stroke-opacity="0.2"/>
+<path d="M0 242.273H1440" stroke="white" stroke-opacity="0.2"/>
+<path d="M0 283.273H1440" stroke="white" stroke-opacity="0.2"/>
+<path d="M0 324.273H1440" stroke="white" stroke-opacity="0.2"/>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_1577_161" x1="720" y1="0.273438" x2="720" y2="328.273" gradientUnits="userSpaceOnUse">
+<stop stop-color="#D9D9D9" stop-opacity="0"/>
+<stop offset="1" stop-color="#D9D9D9"/>
+</linearGradient>
+<clipPath id="clip0_1577_161">
+<rect width="1440" height="329" fill="white"/>
+</clipPath>
+</defs>
+</svg>
