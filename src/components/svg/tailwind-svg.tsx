@@ -1,5 +1,5 @@
 
-export function SvgComponent(props) {
+export function TailwindSvg(props) {
   return (
     <svg
       width={props.width}

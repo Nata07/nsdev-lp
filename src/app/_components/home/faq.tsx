@@ -1,4 +1,5 @@
 import { FaqItem } from "../faq-item";
+import { TitleSection } from "./title-section";
 
 export function Faq() {
   return (
@@ -6,11 +7,7 @@ export function Faq() {
       <div className="animate-bounce py-56 px-56 h-96 w-96 rounded-full opacity-10 blur-3xl bg-white absolute -top-80 left-1/2 transform -translate-x-1/2 bg-gradient-to-l to-[#2824d5] from-[#FF0088]">
       </div>
       <div className="container max-w-screen-xl grid md:grid-cols-2 gap-12 items-start">
-        <div>
-          <h3 className="text-white text-3xl font-bold max-w-[80%] font-gradient mb-4 mt-2">
-            Perguntas frequentes
-          </h3>
-        </div>
+        <TitleSection title="Perguntas Frequentes" />
         <div>
           <div className="w-full space-y-4">
             <FaqItem

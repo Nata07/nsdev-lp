@@ -3,6 +3,7 @@ import { LucideArrowUpRight } from "lucide-react";
 import methodology from "../../../../methodology.json"
 import { MethodologyItem } from "./methodology-item";
 import { ButtonWpp } from "./button-home";
+import { TitleSection } from "./title-section";
 
 export function SectionMethodology() {
   return (
@@ -10,6 +11,8 @@ export function SectionMethodology() {
       <div className="container max-w-screen-xl grid md:grid-cols-[20rem_1fr] gap-12 items-start">
         <div className="">
           <h2 className="font-bold leading-normal text-start text-5xl">Nossa Metodologia</h2>
+          <div className="p-[0.5px] max-w-24 bg-gradient-to-l to-[#2824d585] from-[#FF008885]" />
+          
         </div>
         <div className="grid lg:grid-cols-2 space-y-4">
           <div className="left">
