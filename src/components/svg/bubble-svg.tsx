@@ -1,12 +1,13 @@
-export function BubbleSvg(props) {
+import { SVGProps } from "@/utils/types-svg";
+
+export function BubbleSvg({ width, height}: SVGProps) {
   return (
     <svg
-      width={props.width}
-      height={props.height}
+      width={width}
+      height={height}
       viewBox="0 0 81 89"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      {...props}
     >
       <path
         d="M65 52.5C65 63.822 55.822 73 44.5 73S24 63.822 24 52.5 33.178 32 44.5 32 65 41.178 65 52.5zm-31.947 0c0 6.322 5.125 11.447 11.447 11.447 6.322 0 11.447-5.125 11.447-11.447 0-6.322-5.125-11.447-11.447-11.447-6.322 0-11.447 5.125-11.447 11.447z"

@@ -1,12 +1,13 @@
-export function TeamSvg(props) {
+import { SVGProps } from "@/utils/types-svg";
+
+export function TeamSvg({ width, height}: SVGProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width={props.width}
-      height={props.height}
+      width={width}
+      height={height}
       viewBox="0 0 40 41"
       fill="none"
-      {...props}
     >
       <g fillRule="evenodd" clipRule="evenodd">
         <path

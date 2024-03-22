@@ -1,12 +1,13 @@
-export function XanoSvg(props) {
+import { SVGProps } from "@/utils/types-svg";
+
+export function XanoSvg({ width, height}: SVGProps) {
   return (
     <svg
-      width={props.width}
-      height={props.height}
+      width={width}
+      height={height}
       viewBox="0 0 246 171"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      {...props}
     >
       <g clipPath="url(#clip0_1623_49)">
         <mask

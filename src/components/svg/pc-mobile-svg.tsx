@@ -1,12 +1,13 @@
-export function PcMobileSvg(props) {
+import { SVGProps } from "@/utils/types-svg";
+
+export function PcMobileSvg({ width, height}: SVGProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width={props.width}
-      height={props.height}
+      width={width}
+      height={height}
       viewBox="0 0 32 33"
       fill="none"
-      {...props}
     >
       <g
         clipPath="url(#clip0_725_5561)"

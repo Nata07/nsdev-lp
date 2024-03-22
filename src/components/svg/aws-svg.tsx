@@ -1,12 +1,13 @@
-export function AwsSvg(props) {
+import { SVGProps } from "@/utils/types-svg";
+
+export function AwsSvg({ width, height}: SVGProps) {
   return (
     <svg
-      width={props.width}
-      height={props.height}
+      width={width}
+      height={height}
       viewBox="0 0 257 154"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      {...props}
     >
       <g clipPath="url(#clip0_1626_91)">
         <path
