@@ -1,0 +1,31 @@
+{
+  "left": [
+    {
+      "slug": "N",
+      "title": "Negócios",
+      "description": "Antes de iniciar qualquer desenvolvimento, compreendemos o negócio do cliente e identificamos os objetivos, desafios e resultados esperados."
+    },
+    {
+      "slug": "D",
+      "title": "Design",
+      "description": "O design é uma parte essencial do processo de desenvolvimento. Nos comprometemos a criar interfaces intuitivas e atraentes, garantindo uma experiência do usuário excepcional em todos os pontos de contato com o produto desenvolvido."
+    },
+    {
+      "slug": "V",
+      "title": "Visão",
+      "description": "Nossa visão vai além do desenvolvimento de soluções técnicas. Priorizamos uma parceria sólida com nossos clientes, visando não apenas o sucesso imediato, mas também a longevidade e o crescimento contínuo. Trabalhando em conjunto, buscamos alcançar resultados, moldando um futuro de sucesso para o seu negócio."
+    }
+  ],
+  "right": [
+    {
+      "slug": "S",
+      "title": "Soluções",
+      "description": "Com base na compreensão detalhada do negócio do cliente, projetamos e desenvolvemos soluções sob medida para atender às suas necessidades exclusivas e tudo adaptado para alcançar os objetivos específicos do cliente."
+    },
+    {
+      "slug": "E",
+      "title": "Entrega",
+      "description": "A NSDEV adota uma abordagem ágil para o desenvolvimento, priorizando entregas incrementais e feedback contínuo do cliente. Isso permite ajustes ao longo do processo e garante que o produto final atenda plenamente às expectativas e necessidades do cliente."
+    }
+  ]
+}
