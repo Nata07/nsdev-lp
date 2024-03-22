@@ -20,11 +20,9 @@ export default function Home() {
         <Hero />
         <Line />
         <SectionClients />
-        {/* feature */}
         <Line />
         <SectionMethodology />
         <Line />
-          {/* depoimentos */}
         <ServicesHome />
         <Line />
         <TechsHome />
