@@ -13,7 +13,7 @@ type FaqItemProps = {
 
 export function FaqItem({ question, answer, id }: FaqItemProps) {
   return (
-    <Accordion collapsible className="py-2 px-4 border border-zinc-900 rounded-lg">
+    <Accordion type="single" collapsible className="py-2 px-4 border border-zinc-900 rounded-lg">
       <AccordionItem value={id}>
         <AccordionTrigger className="text-left">{question}</AccordionTrigger>
         <AccordionContent>
