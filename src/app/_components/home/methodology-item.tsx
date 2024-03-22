@@ -2,6 +2,7 @@ type MethodologyItemProps = {
   slug: string;
   title: string;
   description: string;
+  backgroundColor: string;
 }
 
 export function MethodologyItem({ slug, title, description }: MethodologyItemProps) {

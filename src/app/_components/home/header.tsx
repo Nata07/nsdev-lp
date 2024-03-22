@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { ButtonWpp } from "./button-home";
 
 export function Header() {
   return (
@@ -8,7 +9,9 @@ export function Header() {
           <Image alt="NSDEV" src="/logo.svg" width={40} height={40} loading="lazy" />
         </a>
 
-        <div>menu</div>
+        <div className="flex items-center p-px bg-gradient-to-r to-[#FF0088] from-[#2824d5] h-[58px] rounded-md w-auto">
+          <ButtonWpp title="COMEÇAR PROJETO AGORA" />
+        </div>
       </div>
     </header>
   )

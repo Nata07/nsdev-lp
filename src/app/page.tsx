@@ -11,6 +11,7 @@ import { Hero } from "./_components/home/hero";
 import { Faq } from "./_components/home/faq";
 import { SectionMethodology } from "./_components/home/section-methodology";
 import { SectionClients } from "./_components/home/section-clients";
+import { ButtonWpp } from "./_components/home/button-home";
 
 export default function Home() {
   return (
@@ -67,12 +68,13 @@ export default function Home() {
                 <h2 className="text-center text-2xl font-medium text-white lg:max-w-[488px] lg:text-left lg:text-3xl">
                   Transforme sua empresa e aumente seus resultados
                 </h2>
-                <div className="flex flex-col items-center gap-6 lg:flex-row">
-                  <Button className="h-14 w-56 bg-gradient-to-b to-[#2824d563] from-[#2824d532] hover:opacity-80 font-bold">
-                      Quero decolar
-                      <LucideArrowUpRight color="#FF0088" />
-                    </Button>
-                </div>
+                {/* <div className="flex flex-col items-center gap-6 lg:flex-row">
+                  <Button className="h-14 w-56 bg-gradient-to-b justify-around to-[#2824d563] from-[#2824d532] hover:opacity-80 font-bold">
+                    Quero decolar
+                    <LucideArrowUpRight color="#FF0088" />
+                  </Button>
+                </div> */}
+                <ButtonWpp title="COMEÇAR PROJETO AGORA" />
               </div>
             </div>
           </div>
@@ -186,7 +188,7 @@ export default function Home() {
                   <div className="p-6 rounded w-full h-full flex flex-col gap-6 bg-gray-950 transition-colors hover:bg-gray-900">
                     <div className="w-fit h-fit border border-transparent bg-gradient-to-b from-gray-600 to-gray-600/30 bg-origin-border overflow-hidden rounded">
                       <div className="flex items-center justify-center bg-gradient-to-b from-gray-800 to-gray-800/20 p-2 w-10 h-10">
-                        <img alt="" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" src="/_next/static/media/devices.d2888805.svg" style={{ color: 'transparent' }} />
+                        {/* <img alt="" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" src="/_next/static/media/devices.d2888805.svg" style={{ color: 'transparent' }} /> */}
                       </div>
                     </div>
                     <strong className="block text-3xl font-medium text-white">+600 mil</strong>
