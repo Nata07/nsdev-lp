@@ -8,7 +8,7 @@ export function DefaultSEO() {
       openGraph={{
           type: 'website',
           locale: 'pr_BR',
-          url: 'https://www.nsdev.vercel.app/',
+          url: 'https://nsdev.vercel.app/',
           siteName: 'NSDEV Creative',
       }}
     />

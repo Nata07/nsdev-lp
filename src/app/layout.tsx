@@ -18,7 +18,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${spaceGrotesk.className} antialiased min-h-screen`}>
-        <DefaultSEO />
         {children}
       </body>
     </html>

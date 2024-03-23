@@ -11,10 +11,27 @@ import { ServicesHome } from "./_components/home/services";
 import { TechsHome } from "./_components/home/techs";
 import { BannerProject } from "./_components/home/banner-project";
 import { Footer } from "./_components/home/footer";
+import { NextSeo } from "next-seo";
 
 export default function Home() {
   return (
     <div className="bg-[#02020F] min-h-screen text-white">
+      <NextSeo
+        openGraph={{
+          type: 'website',
+          url: 'https://nsdev.vercel.app/',
+          title: 'NSDEV Creative',
+          description: 'Transforme sua empresa e aumente seus resultados',
+          images: [
+            {
+              url: 'https://nsdev.vercel.app/',
+              width: 800,
+              height: 600,
+              alt: 'NSDEV Creative',
+            },
+          ],
+        }}
+      />
       <Header />
       <main>
         <Hero />
