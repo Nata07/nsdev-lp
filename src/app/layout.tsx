@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
+import { DefaultSEO } from "./default-seo";
 
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
@@ -16,7 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${spaceGrotesk.className} antialiased min-h-screen`}>{children}</body>
+      <body className={`${spaceGrotesk.className} antialiased min-h-screen`}>
+        <DefaultSEO />
+        {children}
+      </body>
     </html>
   );
 }
