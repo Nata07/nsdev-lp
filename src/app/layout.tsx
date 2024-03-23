@@ -11,11 +11,20 @@ export const metadata: Metadata = {
   openGraph: {
     images: [{
       type: 'website',
-      url: 'https://nsdev.vercel.app/logo.svg',
+      url: 'https://nsdev.vercel.app',
       width: 800,
       height: 600
     }]
-  }
+  },
+  twitter: {
+    site: 'https://nsdev.vercel.app',
+    images: [{
+      type: 'website',
+      url: 'https://nsdev.vercel.app',
+      width: 800,
+      height: 600
+    }]
+  },
 };
 
 export default function RootLayout({
